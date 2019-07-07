@@ -41,11 +41,18 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" contentMode="scaleToFill" restorationIdentifier="startLoc" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NC3-8I-f8W">
+                                    <textField opaque="NO" contentMode="scaleToFill" restorationIdentifier="startLoc" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="enter your starting point" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NC3-8I-f8W">
                                         <rect key="frame" x="0.0" y="30.5" width="203" height="30"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="startLoc"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <action selector="finishStart:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="cf6-Xe-Lc6"/>
+                                            <action selector="startLoc:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="vhb-HJ-caS"/>
+                                            <action selector="startPoint:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="D9S-QQ-pUT"/>
+                                            <action selector="startPoint:forEvent:" destination="BYZ-38-t0r" eventType="valueChanged" id="kgY-4V-z6D"/>
+                                        </connections>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Where is your destination?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iQg-oi-lMl">
                                         <rect key="frame" x="0.0" y="70.5" width="203" height="20.5"/>
@@ -53,11 +60,16 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" contentMode="scaleToFill" restorationIdentifier="destiLoc" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pEl-rl-ZNz">
+                                    <textField opaque="NO" contentMode="scaleToFill" restorationIdentifier="destiLoc" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="enter your destination" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pEl-rl-ZNz">
                                         <rect key="frame" x="0.0" y="101" width="203" height="30"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <action selector="Destination:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="am1-ek-Mx3"/>
+                                            <action selector="destination:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="nH0-Zj-OBr"/>
+                                            <action selector="finishdest:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="eEt-01-Jya"/>
+                                        </connections>
                                     </textField>
                                 </subviews>
                             </stackView>
